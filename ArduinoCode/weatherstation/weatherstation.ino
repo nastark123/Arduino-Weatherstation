@@ -1,9 +1,14 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "TempHumidity.h"
 
+TempHumidity temp_humidity(2, 3, false);
+
+void setup() {
+  Serial.begin(9600);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  temp_humidity.update();
+//  Serial.println(temp_humidity.getHumidityRH());
+//  Serial.println(temp_humidity.getTempF());
+  delay(5000);
 }

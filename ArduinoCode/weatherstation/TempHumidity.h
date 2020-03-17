@@ -1,6 +1,8 @@
 #ifndef temphumidity
 #define temphumidity
 
+#include <SPI.h>
+
 class TempHumidity {
     public:
         TempHumidity(int data_pin0, int data_pin1, bool parity_check);
