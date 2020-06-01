@@ -1,5 +1,5 @@
-#ifndef DHT
-#define DHT
+#ifndef _DHT
+#define _DHT
 
 #include <stdint.h>
 #include <Arduino.h>
